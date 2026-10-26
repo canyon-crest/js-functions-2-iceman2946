@@ -109,9 +109,9 @@ function distance(x1, y1, x2, y2) {
 //         Example: tipCalc(50, 20) → tip is 10, total is "60.00"
 
 function tipCalc(bill, tipPercent) {
-  let tip = bill * (tipPercent/10)
-  bill = bill + tip
-  return bill.toFixed(2)
+  let tip = bill * (tipPercent/100)
+  let total = bill + tip
+  return total.toFixed(2)
 
 }
 
